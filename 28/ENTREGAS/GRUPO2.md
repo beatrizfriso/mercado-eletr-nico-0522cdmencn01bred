@@ -1,9 +1,11 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Iasmim Vivanco
+- Danilo Hiroyuki
+- Beatriz Friso
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [https://github.com/IasmimVivanco/Aula_28]()
 
 ## Descrição/Observação (Opcional)
