@@ -1,9 +1,12 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Amanda Barreto
+- Caroliny Cagnoni
+- Isabel Catão
+- José Iranildo Junior
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Link aqui](https://github.com/cgcagnoni/Aula21)
 
 ## Descrição/Observação (Opcional)

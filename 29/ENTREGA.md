@@ -1,4 +1,4 @@
-# Aula 21 - Entrega da atividade
+# Aula 29 - Entrega da atividade
 
 ## [Grupo 1](./ENTREGAS/GRUPO1.md)
 
@@ -15,3 +15,7 @@
 ## [Grupo 7](./ENTREGAS/GRUPO7.md)
 
 ## [Grupo 8](./ENTREGAS/GRUPO8.md)
+
+## [Grupo 9](./ENTREGAS/GRUPO9.md)
+
+## [Grupo 10](./ENTREGAS/GRUP10.md)

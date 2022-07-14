@@ -1,9 +1,10 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Anderlany
+- Gabrielle 
+- Marcelo
+- Martinelli 
 
-## Link do repositório
-
-- [Seu link aqui]()
+## [Link do repositório](https://github.com/lanyarag/sql_aula21.git)
 
 ## Descrição/Observação (Opcional)
