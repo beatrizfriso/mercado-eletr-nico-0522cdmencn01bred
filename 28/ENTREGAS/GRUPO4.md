@@ -1,9 +1,10 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Jaqueline Rossetto
+- Matheus Teixeira
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Repositório](https://github.com/jaquerossetto/Aula28)
 
 ## Descrição/Observação (Opcional)

@@ -1,9 +1,11 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Carla Rani
+- Jaqueline Rossetto
+- Nathalia França
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Repositorio](https://github.com/jaquerossetto/Aula27-RazorHTTP)
 
 ## Descrição/Observação (Opcional)

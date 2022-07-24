@@ -1,9 +1,11 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Caroliny Cagnoni  
+- Ingrid Caroline  
+- Luan Victor  
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Seu link aqui](https://github.com/cgcagnoni/aula27)
 
 ## Descrição/Observação (Opcional)

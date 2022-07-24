@@ -1,9 +1,11 @@
 # Colaboradores
 
-- Seu nome aqui...
+- Cassio Freitas
+- Jaqueline Rossetto
+- Marcelo Alves
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Repositório](https://github.com/jaquerossetto/Aula29EntityFramework)
 
 ## Descrição/Observação (Opcional)

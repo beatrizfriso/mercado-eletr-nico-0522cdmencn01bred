@@ -1,9 +1,12 @@
 # Colaboradores
+[Caroliny Cagnoni](https://github.com/cgcagnoni)  
+[Isabel Catão](https://github.com/isabelalvescatao)  
+[José Iranildo Junior](https://github.com/NICKN1)  
+[Salomão Kim](https://github.com/sekimzero)
 
-- Seu nome aqui...
 
 ## Link do repositório
 
-- [Seu link aqui]()
+- [Aula 29](https://github.com/isabelalvescatao/Aula29)
 
 ## Descrição/Observação (Opcional)

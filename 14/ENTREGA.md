@@ -36,7 +36,7 @@
 - Fabiana Sayuri
 - Jaqueline Rosseto Scagliate
 
-#### Link do repositório
+#### Link do repositório https://github.com/ArielLopes888/Revisando_Colecoes_CSharp_aula14
 
 #### Descrição/Observação (Opcional)
 
