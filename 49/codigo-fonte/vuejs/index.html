@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 49 - Introdução à Vuejs</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+
+    <h1>Meu contador</h1>
+    <div id="app"></div>
+
+    <script>
+
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    messagem: 'Sua contagem está em:',
+                    contador: 0,
+                    nome: ''
+                }
+            },
+            methods: {
+                alerta: function (nome) {
+                    alert(`Olá ${nome}`)
+                }
+            },
+            template: `
+                <p>{{messagem}} {{contador}}</p>
+                <button @click="contador++">+1</button>
+                <hr>
+                <input type="text" placeholder="Digite seu nome" @change="($event)=> nome = $event.target.value" />
+                <button @click="alerta(nome)">Emitir</button>
+            `
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
