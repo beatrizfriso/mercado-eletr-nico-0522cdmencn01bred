@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 45 - JavaScript DOM</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" onchange="capturarValorNome()">
+    </div>
+    <div>
+        <button id="botao">Enviar</button>
+    </div>
+
+    <div>
+        <h1 id="titulo">Olá Nome do usuário</h1>
+    </div>
+
+    <hr>
+
+    <form name="formulario">
+        <h2>Formulário</h2>
+        <div>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+        </div>
+        <br>
+        <div>
+            <input type="email" name="email" placeholder="Digite seu email">
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <div id="mensagem">Olá nome do {usuário}, utilize seu {email} para acessar a plataforma.</div>
+
+
+    <script>
+
+        // Exemplo 1 
+
+        // Seleção do elemento 
+        let inputNome = document.getElementById('nome');
+        let botao = document.querySelector('#botao');
+        let titulo = document.querySelector('#titulo');
+
+        // Função a ser disparada no momento que o evento ser capturado
+        function capturarValorNome() {
+            // titulo.innerText = "Olá " + inputNome.value;
+            titulo.innerText = `Olá ${inputNome.value}`;
+        }
+
+        // Observando o evento click do elemento <button id="botao">
+        botao.addEventListener('click', capturarValorNome);
+
+
+        // Exemplo 2
+
+        let formulario = document.forms['formulario'];
+        // let formulario = document.forms[0];
+
+        formulario.addEventListener('submit', function (evento) {
+
+            evento.preventDefault();
+
+            console.log('Enviei', evento);
+
+            const { nome, email } = evento.target.elements;
+
+            const mensagem = document.querySelector("#mensagem");
+
+            console.log("Nome:", nome.value)
+            console.log("E-mail:", email.value)
+
+            mensagem.innerHTML = `
+                <h2>Olá ${nome.value}, utilize seu ${email.value} para acessar a plataforma.</h2>
+            `;
+
+        });
+
+    </script>
+</body>
+
+</html>

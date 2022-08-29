@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 40 - Introdução à CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /*
+            Regras de especificidade
+
+            element(os)    - 1
+            class(es)      - 10
+            id(s)          - 100
+        */
+
+        * { font-family: Arial; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #aplicativo #botao .negrito {
+            background-color: blue;
+        }
+
+        #botao {
+            background-color: chartreuse;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        .avancar {
+            background-color: aqua;
+        }
+
+        .negrito {
+            font-weight: 900;
+        }
+
+        a {
+            background-color: red;
+            padding: 10px;
+        }
+
+        div {
+            background-color: blue;
+            padding: 20px;
+        }
+
+        .botao {
+            padding: 10px;
+        }
+
+        .botao__primario {
+            background-color: aqua;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    <div id="aplicativo" style="background-color: gray; padding: 20px;">
+        <a id="botao" class="avancar negrito" href="/">Avançar</a>
+        <a href="/">Iniciar</a>
+        <a href="/">Pausar</a>
+        <a class="avancar" href="/">Voltar</a>
+    </div>
+
+    <div>
+        <button class="botao botao__primario">Enviar</button>
+    </div>
+
+</body>
+</html>

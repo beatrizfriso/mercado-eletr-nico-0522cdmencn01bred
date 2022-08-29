@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <!-- 1. Adicione os campos (inputs) em um formulário -->
+    <!-- Nota: O formulário deve enviar os dados para rota /autenticar -->
+    <!-- Nota: Utilize o método POST -->
+    <article>
+        <h1>Cadastre-se</h1>
+        <form 
+            method="post"
+            action="./autenticar"
+        >
+            <div>
+                <label for="nome">Nome completo</label>
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <input 
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="Digite seu nome completo"
+                >
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <!-- 1.2. Altere o tipo para e-mail -->
+                <!-- 1.3. Define como campo obrigatório -->
+                <input 
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+            <div>
+                <label for="idade">Idade</label>
+                <!-- 1.3. Define como campo obrigatório -->
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <input 
+                    id="idade"
+                    name="idade"
+                    type="text"
+                    placeholder="Digite seu idade"
+                >
+            </div>
+            <div>
+                <label for="genero">Gênero</label>
+                <!-- Adicione um select para os valores Masculino, Feminino, Prefiro não informar -->
+                <!-- Nota: Valor padrão é Prefiro não informar -->
+                <select name="genero" id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option selected value="Outros">Prefiro não informar</option>
+                </select>
+                
+            </div>
+            <div>
+                <label>Qual seu nível de nível de conhecimento em programação?</label>
+                <!-- Adicione campos/inputs do tipo radio para agregar os valores 
+                
+                    - Não tenho experiência prêvia
+                    - Sou iniciante
+                    - Tenho experiência, estou em processo de especialização
+                -->
+                <div>
+                    <input 
+                        type="radio" 
+                        id="sem-experiencia" 
+                        name="experiencia" 
+                        value="inexperiente"
+                    >
+                    <label for="sem-experiencia">Não tenho experiência prêvia</label>
+                </div>
+                <div>
+                    <input 
+                        type="radio" 
+                        id="iniciante" 
+                        name="experiencia" 
+                        value="iniciante"
+                    >
+                    <label for="iniciante">Sou iniciante</label>
+                </div>
+                <div>
+                    <input 
+                        type="radio" 
+                        id="experiente" 
+                        name="experiencia" 
+                        value="experiente"
+                    >
+                    <label for="experiente">Tenho experiência, estou em processo de especialização</label>
+                </div>
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <!-- 1.3. Define como campo obrigatório -->
+                <!-- 1.4. Altere o tipo para password -->
+                <input 
+                    id="senha"
+                    name="senha"
+                    type="password"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+            <div>
+                <!-- 1.5. Adicione um checklist -->
+                <input 
+                    id="oferta"
+                    name="oferta"
+                    type="checkbox"
+                    value="1"
+                >
+                <label for="oferta">Deseja receber nossas ofertas mensalmente?</label>
+            </div>
+            <div>
+                <!-- 1.5. Configure o botão para enviar o formulário -->
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </article>
+
+</body>
+</html>

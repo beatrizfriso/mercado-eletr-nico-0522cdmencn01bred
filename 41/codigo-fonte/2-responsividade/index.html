@@ -1,0 +1,205 @@
+<!DOCTYPE html><!-- Fonte padrão 16px -->
+<html lang="pt-br">
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - Grid System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="print" href="./print.css">
+    <style>
+
+        /*
+            Desktop First
+        */
+
+        /*
+            Proporção padrão do documento...
+        */
+        html {
+            font-size: 16px;
+        }
+
+        /* 
+            Layout 
+            
+        */
+
+        /*
+            1. Criando um Grid Container.
+        */
+        .l-app {
+            border: 5px solid gray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            min-height: 70vh;
+            margin: 0 auto;
+            max-width: 960px;
+            width: 100vw;
+
+            /* 
+                1.1. Defino qual modelo de área Grid vou utilizar 
+            */
+            grid-template-areas:
+                "relacionado        nav         nav         nav"
+                "relacionado        conteudo    conteudo    conteudo"
+                "relacionado        rodape      rodape      rodape";
+            /*
+                2.2. Defino qual model de linhas e colunas vou utilizar
+            */
+            grid-template-columns: minmax(1fr, 100px) repeat(minmax(auto-fill, 1fr), 3); /* Fração = 100% / 4 = 25% */ /* 1fr 1fr 1fr 1fr */
+            /* grid-template-columns: repeat(100px, 4); 100px 100px 100px 100px */
+            /* grid-template-columns: repeat(100px, 2) repeat(50px, 2);  100px 100px 50px 50px */ 
+            grid-template-rows: minmax(40px, 50px) 1fr minmax(40px, 50px);
+        }
+
+        /*
+            2. Nome para cada área da aplicação.
+        */
+        .l-nav {
+            grid-area: nav;
+        }
+
+        .l-conteudo {
+            grid-area: conteudo;
+        }
+
+        .l-relacionados {
+            grid-area: relacionado;
+        }
+
+        .l-rodape {
+            grid-area: rodape;
+        }
+
+        .l-nav,
+        .l-conteudo,
+        .l-relacionados,
+        .l-rodape {
+            background-color: greenyellow;
+            border-radius: 5px;
+            font-family: Arial Black, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .l-nav,
+        .l-conteudo,
+        .l-relacionados {
+            font-size: .8rem; /* 80% de 16px */
+        }
+
+        .l-rodape {
+            font-size: 10px;
+        }
+
+        .c-copyright {
+            font-size: 1em; /* 100% de 10px */
+        }
+
+        /* 
+            Tablet
+            Se 481px à 720px 
+        */
+        @media (max-width: 720px) {
+            html {
+                font-size: 20px;
+            }
+
+            .l-nav,
+            .l-conteudo,
+            .l-relacionados,
+            .l-rodape {
+                background-color: orangered;
+            }
+
+            .l-rodape {
+                font-size: 14px;
+            }
+
+            .l-app {
+                /* 
+                    1.1. Defino qual modelo de área Grid vou utilizar 
+                */
+                grid-template-areas:
+                    "nav                nav         nav         nav"
+                    "relacionado        conteudo    conteudo    conteudo"
+                    "relacionado        rodape      rodape      rodape";
+                /*
+                    2.2. Defino qual model de linhas e colunas vou utilizar
+                */
+                grid-template-columns: repeat(minmax(auto-fill, 1fr), 4); /* Fração = 100% / 4 = 25% */ /* 1fr 1fr 1fr 1fr */
+                /* grid-template-columns: repeat(100px, 4); 100px 100px 100px 100px */
+                /* grid-template-columns: repeat(100px, 2) repeat(50px, 2);  100px 100px 50px 50px */ 
+                grid-template-rows: minmax(40px, 50px) 1fr minmax(40px, 50px);
+
+            }
+            
+        }
+
+        /* 
+            Mobile
+            Se 0 à 480px 
+        */
+        @media (max-width: 480px) {
+
+            html {
+                font-size: 30px;
+            }
+
+            .l-nav,
+            .l-conteudo,
+            .l-relacionados,
+            .l-rodape {
+                background-color: violet;
+            }
+
+            .l-rodape {
+                font-size: 16px;
+            }
+
+            .l-app {
+                /* 
+                    1.1. Defino qual modelo de área Grid vou utilizar 
+                */
+                grid-template-areas:
+                    "nav"
+                    "relacionado"
+                    "conteudo"
+                    "rodape";
+                /*
+                    2.2. Defino qual model de linhas e colunas vou utilizar
+                */
+                grid-template-columns: 1fr; /* Fração = 100% / 4 = 25% */ /* 1fr 1fr 1fr 1fr */
+                /* grid-template-columns: repeat(100px, 4); 100px 100px 100px 100px */
+                /* grid-template-columns: repeat(100px, 2) repeat(50px, 2);  100px 100px 50px 50px */ 
+                grid-template-rows: minmax(40px, 50px) 1fr minmax(40px, 50px);
+
+            }
+        }
+
+        @media print {
+            .l-nav,
+            .l-relacionados,
+            .l-rodape {
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="l-app">
+        <nav class="l-nav">Navegação</nav><!-- 1rem = 16px (html) -->
+        <main class="l-conteudo">Conteúdo</main><!-- 1rem = 16px (html) -->
+        <aside class="l-relacionados">Relacionados</aside><!-- 1rem = 16px (html) -->
+        <footer class="l-rodape"><!-- Fonte padrão 12px (contexto local) -->
+            <span class="c-copyright">Rodapé</span><!-- 1em = 12px (contexto local) -->
+        </footer>
+    </div>
+
+</body>
+</html>

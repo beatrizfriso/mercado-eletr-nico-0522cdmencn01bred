@@ -1,0 +1,163 @@
+<html>
+
+    <head>
+        <!-- 
+            SEO - Otimização para motores de busca 
+
+            Ferramentas de apoio:
+
+            - Extensão Lighthouse - Analisa o código fonte e avaliar performance, acessibilidade, boas práticas e SEO.
+                - [ ] https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=pt-BR
+            - Documentação do Opengraph - Documentação do The Open Graph protocol.
+                - [ ] https://ogp.me/
+            - Gerador de favicon - Um gerador de favicon.
+                - https://www.favicon-generator.org/
+        -->
+        <meta name="description" content="Descrição do documento">
+        <!-- 
+            noindex	        Não indexar uma página.
+            follow	        Repassar autoridade para a página linkada.
+            nofollow	    Não repassar autoridade para a página linkada.
+            nosnippet	    Não exibir a descrição do site no mecanismo de busca.
+            noimageindex	Não indexar nenhuma imagem da página.
+        -->
+        <meta name="robots" content="follow noimageindex">
+        <!-- Idioma do documento -->
+        <meta http-equiv="content-language" content="pt-br">
+        <meta name="author" content="Nome do autor/responsável pelo documento">
+        <meta name="creator" content="Responsável pela manutenção ou provedor de todos os direitos reservados">
+        <!-- Opengraph - Redes sociais -->
+        <meta property="og:locale" content="pt_BR">
+        <!-- Define o idioma da publicação. -->
+        <meta property="og:type" content="article">
+        <!-- Define o título da documento (que deseja utilizar no compartilhamento). -->
+        <meta property="og:title" content="Título da página">
+        <!-- Define a descrição do documento. -->
+        <meta property="og:description" content="Uma descrição para página">
+        <!-- Define a URL da do documento.-->
+        <meta property="og:url" content="https://www.meudominio.com">
+        <!-- Define o nome do site. -->
+        <meta property="og:site_name" content="Nome da empresa">
+        <!-- Define a imagem deseja utilizar no compartilhamento. -->
+        <meta property="og:image" content="URL_DA_IMAGEM/NOME_DA_IMAGEM.jpg">
+        <title>Título do documento</title>
+        <!-- Define ícone a ser utilizado -->
+        <!-- Nota: Cada tipo de dispositivo deve ter uma declaração de favicon. -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+
+    <body>
+        <!-- Semântica em documentos HTML -->
+
+        <!-- 1. Textos -->
+
+        <!-- 1.1. Bloco -->
+        <p>Paragrafo</p>
+        <p>Paragrafo</p>
+
+        <!-- 1.2. Em linha -->
+        <span>Texto</span>
+        <span>Texto</span>
+        
+        <!-- 2. Título -->
+        <h1>Título</h1>
+        <h2>Título</h2>
+        <h3>Título</h3>
+        <h4>Título</h4>
+        <h5>Título</h5>
+        <h6>Título</h6>
+
+        <!-- 3. Contexto -->
+
+        <!-- 3.1. Conteúdo destaque -->
+        <main>
+            <p>Informação que desejo destacar.</p>
+        </main>
+
+        <!-- 3.2. Conteúdo principal -->
+        <article>
+            <h1 id="titulo">Título</h1>
+            <main>
+                <p>Importância desse tênis é...</p>
+            </main>
+        </article>
+
+        <main>
+            <p>Promoção deste tênis</p>
+        </main>
+
+        <article>
+            <h2>Tópico</h2>
+        </article>
+
+        <!-- 3.3. Sessão / Tópico -->
+        <div>
+            <article>
+                <h1>Título</h1>
+                <section>
+                    <h2>Tópico</h2>
+                    <p>Texto</p>
+                </section>
+                <section>
+                    <h2>Tópico</h2>
+                    <p>Texto</p>
+                </section>
+            </article>
+        </div>
+
+        <!-- 3.4. Conteúdo relacionado (secundário) -->
+        <aside>
+            <h1>Produtos relacionados</h1>
+            <section>
+                <h2>Nome do projeto relacionado</h2>
+            </section>
+        </aside>
+
+        <!-- 3.5. Navegação -->
+        <nav>
+            <!-- Links internos -->
+            <a href="#titulo">Título principal</a>
+            <a href="https://www.digitalhouse.com/br" target="_blank">Site da Digital House</a>
+        </nav>
+
+        <!-- 3.6. Cabeçalho -->
+        <article>
+            <header>
+                <h1>Título da máteria</h1>
+                <h2>Subtítulo da matéria</h2>
+                <p>Descrição do título...</p>
+            </header>
+            <section>
+                <h2>Tópico</h2>
+                <p>Texto em questão</p>
+            </section>
+        </article>
+
+        <!-- 3.7. Bibiografia / Copyright -->
+        <article>
+            <header>
+                <h1>Título da máteria</h1>
+                <h2>Subtítulo da matéria</h2>
+                <p>Descrição do título...</p>
+                <!-- Estamos utilizando footer para adicionar referência. -->
+                <footer>
+                    <p>Autor é <a href="#">Willian Sant Anna</a></p>
+                    <p>
+                        <a href="mailto:wsantanna@digitalhouse.com">E-mail</a>
+                    </p>
+                    <p>Baseado no Conto <a href="#">X</a></p>
+                </footer>
+            </header>
+            <section>
+                <h2>Tópico</h2>
+                <p>Texto em questão</p>
+            </section>
+        </article>
+
+        <!-- Estamos utilizando footer para adicionar copyright da página.  -->
+        <footer>
+            <span>Todos os direitos reservados à <a href="" target="_blank">Digital House</a></span>
+        </footer>
+
+    </body>
+</html>

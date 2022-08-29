@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form
+        method="get"
+        action="https://api.sistema.com/"
+    >
+        <div>
+            <label for="nome">Nome</label>
+            <input 
+                id="nome" 
+                name="nome" 
+                type="text" 
+                placeholder="Digite seu nome completo"
+                required
+            >
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input 
+                id="email"
+                name="email"
+                type="email"  
+                placeholder="Digite seu e-mail"
+                required
+            >
+        </div>
+        <div>
+            <label for="dataNascimento">Data de nascimento</label>
+            <input id="dataNascimento" name="dataNascimento" type="date">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input 
+                id="senha"
+                name="senha"
+                type="password"  
+                placeholder="Digite sua senha"
+                required
+            >
+        </div>
+        <div>
+            <label for="escola">Qual sua escola?</label>
+            <select name="escola" id="escola">
+                <option selected disabled>Escolha uma escola</option>
+                <optgroup label="Pessoa física">
+                    <option value="0">CTD</option>
+                    <option value="2">Programação</option>
+                </optgroup>
+                <optiongroup label="Pessoa Jurídica">
+                    <option value="1">B2B</option>
+                </optiongroup>
+            </select>
+        </div>
+        <div>
+            <input 
+                id="promocao1" 
+                name="promocao" 
+                type="checkbox"
+                value="clube"
+            >
+            <label for="promocao">Deseja cadastrar-se no Clube de Promoções</label>
+        </div>
+        <div>
+            <input 
+                id="promocao2" 
+                name="promocao" 
+                type="checkbox"
+                value="revista"
+            >
+            <label for="promocao">Deseja experimentar nossa revista?</label>
+        </div>
+        <div>
+            <input 
+                id="promocao3" 
+                name="promocao1" 
+                type="radio"
+                value="clube"
+            >
+            <label for="promocao">Deseja cadastrar-se no Clube de Promoções</label>
+        </div>
+        <div>
+            <input 
+                id="promocao4" 
+                name="promocao1" 
+                type="radio"
+                value="revista"
+            >
+            <label for="promocao">Deseja experimentar nossa revista?</label>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

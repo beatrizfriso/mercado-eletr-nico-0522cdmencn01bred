@@ -1,0 +1,14 @@
+{
+  "name": "2_servicos",
+  "version": "1.0.0",
+  "description": "Implementação de um Seriviço utilizando npm ",
+  "main": "index.js",
+  "scripts": {
+    "servidor": "json-server ./mock/BlogContext.json"
+  },
+  "author": "Willian Sant Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}

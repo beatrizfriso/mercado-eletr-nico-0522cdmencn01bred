@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticar</title>
+</head>
+<body>
+    
+    <!-- 1. Adicione os campos (inputs) em um formulário -->
+    <!-- Nota: O formulário deve enviar os dados para rota /autenticar -->
+    <!-- Nota: Utilize o método POST -->
+    <article>
+        <h1>Identifique-se</h1>
+        <form 
+            name="autenticar"
+            method="post"
+            action="./autenticar"
+        >
+            <div>
+                <label for="email">E-mail</label>
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <!-- 1.2. Altere o tipo para email -->
+                <!-- 1.3. Define como campo obrigatório -->
+                <input 
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <!-- 1.1. Adicione uma descrição no input utilizando placeholder -->
+                <!-- 1.3. Define como campo obrigatório -->
+                <!-- 1.4. Altere o tipo para password -->
+                <input 
+                    id="senha"
+                    name="senha"
+                    type="text"
+                    placeholder="Digite sua senha"
+                    required
+                >
+            </div>
+            <div>
+                <!-- 1.4. Configure o botão para enviar o formulário -->
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </article>
+
+</body>
+</html>

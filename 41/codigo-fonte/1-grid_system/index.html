@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 16 - Grid System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            Layout 
+            
+        */
+
+        /*
+            1. Criando um Grid Container.
+        */
+        .l-app {
+            border: 5px solid gray;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            min-height: 70vh;
+            margin: 0 auto;
+            max-width: 960px;
+            width: 100vw;
+
+            /* 
+                1.1. Defino qual modelo de área Grid vou utilizar 
+            */
+            grid-template-areas:
+                "relacionado        nav         nav         nav"
+                "relacionado        conteudo    conteudo    conteudo"
+                "relacionado        rodape      rodape      rodape";
+            /*
+                2.2. Defino qual model de linhas e colunas vou utilizar
+            */
+            grid-template-columns: repeat(minmax(auto-fill, 1fr), 4); /* Fração = 100% / 4 = 25% */ /* 1fr 1fr 1fr 1fr */
+            /* grid-template-columns: repeat(100px, 4); 100px 100px 100px 100px */
+            /* grid-template-columns: repeat(100px, 2) repeat(50px, 2);  100px 100px 50px 50px */ 
+            grid-template-rows: minmax(40px, 50px) 1fr minmax(40px, 50px);
+        }
+
+        /*
+            2. Nome para cada área da aplicação.
+        */
+        .l-nav {
+            grid-area: nav;
+        }
+
+        .l-conteudo {
+            grid-area: conteudo;
+        }
+
+        .l-relacionados {
+            grid-area: relacionado;
+        }
+
+        .l-rodape {
+            grid-area: rodape;
+        }
+
+        .l-nav,
+        .l-conteudo,
+        .l-relacionados,
+        .l-rodape {
+            background-color: greenyellow;
+            border-radius: 5px;
+            font-family: Arial Black, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="l-app">
+        <nav class="l-nav">Navegação</nav>
+        <main class="l-conteudo">Conteúdo</main>
+        <aside class="l-relacionados">Relacionados</aside>
+        <footer class="l-rodape">Rodapé</footer>
+    </div>
+
+</body>
+</html>
